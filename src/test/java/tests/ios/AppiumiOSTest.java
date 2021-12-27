@@ -13,12 +13,8 @@ public class AppiumiOSTest extends BaseClass {
 
     IOSLaunchPage iosLaunchPage;
     EligibilityModalPage eligibilityModalPage;
-    ProductCarouselPage productCarouselPage;
-    AppFlowPage appFlowPage;
-    TermsConditionsPage termsConditionsPage;
-    PhoneCapturePage phoneCapturePage;
 
-    @Test
+    @Test (enabled = false)
     public void verify_launching_page() {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         iosLaunchPage.verifyLogInButton("Log In");
@@ -26,7 +22,7 @@ public class AppiumiOSTest extends BaseClass {
         iosLaunchPage.verifySignUpButton("I'm new to [ARBM Digibank]");
     }
 
-    @Test
+    @Test (enabled = false)
     public void verify_product_carousel_page() {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         ProductCarouselPage prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
@@ -38,8 +34,7 @@ public class AppiumiOSTest extends BaseClass {
             iosDriver.findElementByAccessibilityId("pageControl").click();
         }
     }
-
-    @Test
+    @Test (enabled = false)
     public void verify_product_eligibility_modal() {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         ProductCarouselPage prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
@@ -68,7 +63,7 @@ public class AppiumiOSTest extends BaseClass {
 
     }
 
-    @Test
+    @Test (enabled = false)
     public void verify_app_flow_page() {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         ProductCarouselPage prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
@@ -81,7 +76,7 @@ public class AppiumiOSTest extends BaseClass {
         appFlowPage.verifySignUpButton("Let's sign up");
     }
 
-    @Test
+    @Test (enabled = false)
     public void verify_terms_conditions_page() {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         ProductCarouselPage prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
@@ -94,7 +89,7 @@ public class AppiumiOSTest extends BaseClass {
 
     }
 
-    @Test
+    @Test (enabled = false)
     public void verify_eligbility_page() {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         ProductCarouselPage prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
@@ -108,7 +103,7 @@ public class AppiumiOSTest extends BaseClass {
 
     }
 
-    @Test
+    @Test (enabled = false)
     public void verify_capture_name_page() throws InterruptedException {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         ProductCarouselPage prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
@@ -124,7 +119,7 @@ public class AppiumiOSTest extends BaseClass {
 
     }
 
-    @Test
+    @Test (enabled = false)
     public void verify_capture_phone_page() throws InterruptedException {
         iosLaunchPage = new IOSLaunchPage(iosDriver);
         ProductCarouselPage prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
