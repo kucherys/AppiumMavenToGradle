@@ -34,7 +34,7 @@ public class BaseClass extends Capabilities {
         }
 
         else if (getAppType().equals("Android")) {
-            androidDriver = capabilitiesAndroid("digibank-0.0.29-debug.apk");
+            androidDriver = capabilitiesAndroid("digibank-0.0.24-debug.apk");
         }
     }
 
