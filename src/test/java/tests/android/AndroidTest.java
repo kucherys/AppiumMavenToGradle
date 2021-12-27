@@ -8,7 +8,7 @@ public class AndroidTest extends BaseClassAndroid {
 
     AndroidLaunchPage androidLaunchPage;
 
-    @Test
+    @Test (enabled = false)
     public void verify_android_launching_page() {
         androidLaunchPage = new AndroidLaunchPage(androidDriver);
         androidLaunchPage.verifyLogInButton("Log In");
