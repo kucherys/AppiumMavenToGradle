@@ -15,4 +15,5 @@ Feature: Verify landing page functionality
     Then I verify elements on landing page
       | logInButton | logoLabel  | signUpButton        |
       | Log In      | Welcome to | I'm new to Digibank |
+    And I confirm tests completed with result TEST PASSED!!!
 

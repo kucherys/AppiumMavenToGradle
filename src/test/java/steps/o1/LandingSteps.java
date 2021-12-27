@@ -58,6 +58,12 @@ public class LandingSteps extends BaseClass {
         }
     }
 
+    @Then("^I confirm tests completed with result (.+)$")
+    public void confitmTets(String result) {
+        System.out.println("CUCUMBER TESTS PASSED WITH RESILT: " + result);
+
+    }
+
     @After
     public void stopAppiumServer(){
         System.out.println("Stop appium server");
