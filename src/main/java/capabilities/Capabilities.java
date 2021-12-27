@@ -53,7 +53,7 @@ public class Capabilities {
         File appDir = new File("src");
         File app = new File(appDir, appName);
         DesiredCapabilities cap = new DesiredCapabilities();
-        StartAndroidEmulator();
+//        StartAndroidEmulator();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "AndroidEmulator");
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
